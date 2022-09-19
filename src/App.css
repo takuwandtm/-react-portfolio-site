@@ -10,17 +10,19 @@ body {
 h1 {
   margin: 0;
   font-size: 48px;
-  top: 200px;
 }
 
 h2 {
+  font-size: 16px;
+}
+
+div.heading h2 {
   font-size: 32px;
 }
 
 h3 {
-  margin: 0;
-  font-size: 16px;
-  top: 200px;
+  margin: 100;
+  font-size: 20px;
 }
 
 .main-cover {
@@ -39,6 +41,15 @@ h3 {
   left: 0;
   right: 0;
   background: rgba(48, 191, 186, 0.9);
+}
+
+.main-cover .overlayAbout {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(48, 108, 191, 0.9);
 }
 
 .profile-thumb {
@@ -101,9 +112,31 @@ h3 {
   position: relative;
 }
 
+.about-text {
+  top: 100px;
+  color: white;
+  position: relative;
+  margin: 0;
+  font-size: 70px;
+  text-align: center;
+}
+
+.about-text p {
+  margin: 0;
+  padding: 0;
+}
+
+.explain-text {
+  top: 120px;
+  color: white;
+  position: relative;
+  margin: 0;
+  font-size: 30px;
+  text-align: center;
+}
+
 .icon-link {
   position: relative;
-  top: 200px;
 }
 
 #skills {
@@ -157,4 +190,83 @@ h3 {
 
 .skill-item {
   margin: 0 48px;
+}
+
+site-header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+/*スキル*/
+
+/*ナビゲーションバー*/
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.NavbarItems {
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 0;
+  padding: 0;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+.NavbarItems h1 {
+  color: white;
+  padding: 20px;
+  font-size: 25px;
+}
+
+.logo {
+  width: 20%;
+  float: left;
+}
+
+.navbar-ul {
+  width: 80%;
+  float: left;
+  list-style: none;
+  margin: 0px;
+  padding: 0;
+}
+
+a {
+  padding: 54px 60px 40px 60px;
+}
+
+li {
+  display: inline;
+  list-style: none;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 20px 0px 40px 0px;
+}
+
+.nav-links {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links-mobile {
+  color: white;
+  text-decoration: none;
+}
+
+li:hover {
+  background-color: white;
+}
+
+li:hover .nav-links {
+  color: black;
+}
+
+li:hover .nav-links-mobile {
+  color: black;
 }

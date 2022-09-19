@@ -1,12 +1,16 @@
 import './App.css';
-import { Header } from './components/Header';
+import Navbar from './components/Navbar/Navbar';
+import { Profile } from './components/Profile';
+import { AboutMe } from './components/AboutMe';
 import { Skills } from './components/Skills';
 import { Contact } from './components/Contact';
 
 function App() {
   return (
     <>
-      <Header />
+      <Navbar />
+      <Profile />
+      <AboutMe />
       <Skills />
       <Contact />
     </>
@@ -14,3 +18,4 @@ function App() {
 }
 
 export default App;
+

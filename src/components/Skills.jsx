@@ -1,6 +1,7 @@
 import Circle from 'react-circle';
 import { requestStates } from '../constants';
 import { useSkills } from '../customHooks/useSkills';
+import ProfileImage from '../images/meditation-app-master.png';
 export const Skills = () => {
 
   const [sortedLanguageList, fetchRequestState, converseCountToPercentage] = useSkills();
@@ -9,7 +10,13 @@ export const Skills = () => {
     <div id="skills">
       <div className="container">
         <div className="heading">
-          <h2>Skills</h2>
+
+          <h2>Works</h2>
+          {/* <div className="skill-container">
+            <img src={`${ProfileImage}`} className="item-img" />
+          </div> */}
+
+
         </div>
         <div className="skills-container">
           {

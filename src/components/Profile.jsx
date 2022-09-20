@@ -23,7 +23,7 @@ export const Profile = () => {
               <ul className="social-icons">
                 <li className='icon-link'>
                   <a href="https://github.com/takuwandtm">
-                    <FaGithub color="white" size="2rem" />
+                    <FaGithub color="white" size="5rem" />
                   </a>
                 </li>
                 <li className='icon-link'>

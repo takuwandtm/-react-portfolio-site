@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/-react-portfolio-site/static/css/main.e949ae1a.css",
-    "main.js": "/-react-portfolio-site/static/js/main.6b159779.js",
+    "main.css": "/-react-portfolio-site/static/css/main.c1e1ba1e.css",
+    "main.js": "/-react-portfolio-site/static/js/main.dd4bedcf.js",
     "static/js/787.ce9a24bf.chunk.js": "/-react-portfolio-site/static/js/787.ce9a24bf.chunk.js",
-    "static/media/meditation-app-master.png": "/-react-portfolio-site/static/media/meditation-app-master.1a5655eeda5705291fc1.png",
-    "static/media/cover-image.jpeg": "/-react-portfolio-site/static/media/cover-image.87fe604e2d258af00dd1.jpeg",
+    "static/media/cover-image.jpeg": "/-react-portfolio-site/static/media/cover-image.a9d63547972a55409371.jpeg",
+    "static/media/meditation-app-master.png": "/-react-portfolio-site/static/media/meditation-app-master.7b1035a8b7a43bfd66e2.png",
+    "static/media/portfolio-site.png": "/-react-portfolio-site/static/media/portfolio-site.94adabb94d0e00ffb422.png",
     "static/media/profile-image.jpg": "/-react-portfolio-site/static/media/profile-image.6f25365cf2e949f417aa.jpg",
     "index.html": "/-react-portfolio-site/index.html",
-    "main.e949ae1a.css.map": "/-react-portfolio-site/static/css/main.e949ae1a.css.map",
-    "main.6b159779.js.map": "/-react-portfolio-site/static/js/main.6b159779.js.map",
+    "main.c1e1ba1e.css.map": "/-react-portfolio-site/static/css/main.c1e1ba1e.css.map",
+    "main.dd4bedcf.js.map": "/-react-portfolio-site/static/js/main.dd4bedcf.js.map",
     "787.ce9a24bf.chunk.js.map": "/-react-portfolio-site/static/js/787.ce9a24bf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e949ae1a.css",
-    "static/js/main.6b159779.js"
+    "static/css/main.c1e1ba1e.css",
+    "static/js/main.dd4bedcf.js"
   ]
 }

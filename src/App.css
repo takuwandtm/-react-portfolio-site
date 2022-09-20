@@ -16,7 +16,24 @@ h2 {
   font-size: 16px;
 }
 
+div.explain-text h2 {
+  margin: 50px;
+  font-size: 40px;
+}
+
+div.explain-text h3 {
+  margin: 80;
+  font-size: 30px;
+}
+
+div.heading h1 {
+  margin: 80;
+  font-size: 70px;
+  top: 100px;
+}
+
 div.heading h2 {
+  margin: 80;
   font-size: 32px;
 }
 
@@ -34,16 +51,26 @@ h3 {
   width: 100%;
 }
 
+.main-cover-aboutMe {
+  background-color: transparent;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  height: 200vh;
+  width: 100%;
+}
+
 .main-cover .overlay {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(48, 191, 186, 0.9);
+  background: rgba(122, 179, 123, 0.9);
+
 }
 
-.main-cover .overlayAbout {
+.main-cover-aboutMe .overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -51,6 +78,8 @@ h3 {
   right: 0;
   background: rgba(48, 108, 191, 0.9);
 }
+
+
 
 .profile-thumb {
   background-size: cover !important;
@@ -65,11 +94,13 @@ h3 {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
+  animation: fadeIn 500ms linear both;
 }
 
 .social-icons {
   margin: 0;
   padding: 0;
+  animation: fadeIn 500ms linear both;
 }
 
 .social-icons li {
@@ -82,16 +113,17 @@ h3 {
 .social-icons li a {
   display: inline-block;
   color: #30BFBA;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .container {
   width: 1170px;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+
 }
 
 .display-table {
@@ -110,6 +142,7 @@ h3 {
 .title-text {
   color: white;
   position: relative;
+  animation: fadeIn 500ms linear both;
 }
 
 .about-text {
@@ -147,12 +180,25 @@ h3 {
 .heading {
   margin-bottom: 32px;
   text-align: center;
+  padding-top: 50px;
+
 }
 
 .skills-container {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
+}
+
+.works-container {
+  position: relative;
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  overflow: hidden;
+  padding-top: 50px;
 }
 
 #contact {
@@ -192,6 +238,32 @@ h3 {
   margin: 0 48px;
 }
 
+.works-item {
+  margin: 0 48px;
+  float: left;
+}
+
+.works-picture {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+
+.skill-picture {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  width: 60px;
+  height: 60px;
+
+}
+
+
+
 site-header__wrapper {
   display: flex;
   align-items: center;
@@ -199,7 +271,82 @@ site-header__wrapper {
   padding: 1rem;
 }
 
-/*スキル*/
+.flex_box {
+  /* 背景色指定 */
+  padding: 10px;
+  /* 余白指定 */
+  display: flex;
+  width: 100%
+}
+
+.flex_item {
+  padding: 10px;
+  color: #fff;
+  /* 文字色 */
+  margin: 10px;
+  /* 外側の余白 */
+  border-radius: 5px;
+  /* 角丸指定 */
+  width: 33%;
+
+  align-items: center;
+
+}
+
+.flex_item_works {
+  padding: 10px;
+  color: #fff;
+  /* 文字色 */
+  margin: 10px;
+  /* 外側の余白 */
+  border-radius: 5px;
+  /* 角丸指定 */
+  width: 33%;
+  align-items: center;
+
+}
+
+.flex_item:nth-child(1) {
+  background-color: rgba(20, 212, 209, 0.6);
+  /* 背景色指定 */
+}
+
+.flex_item:nth-child(2) {
+  background-color: rgba(20, 212, 39, 0.8);
+  /* 背景色指定 */
+}
+
+.flex_item:nth-child(3) {
+  background-color: rgba(196, 212, 20, 0.8);
+  /* 背景色指定 */
+}
+
+.flex_item_works:nth-child(1) {
+  background-color: rgba(113, 136, 254, 0.8);
+  /* 背景色指定 */
+}
+
+.flex_item_works:nth-child(2) {
+  background-color: rgba(113, 136, 254, 0.8);
+  /* 背景色指定 */
+}
+
+.flex_item_works:nth-child(3) {
+  background-color: rgba(113, 136, 254, 0.8);
+  /* 背景色指定 */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 /*ナビゲーションバー*/
 
@@ -247,6 +394,7 @@ li {
   font-size: 18px;
   line-height: 30px;
   padding: 20px 0px 40px 0px;
+  width: 100%;
 }
 
 .nav-links {

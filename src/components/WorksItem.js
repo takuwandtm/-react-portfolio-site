@@ -5,19 +5,19 @@ export const WorksItem = [
   {
     Title: "瞑想アプリ",
     url: "https://takuwandtm.github.io/meditation-app-master/",
-    cName: "nav-links",
+    cName: "works-links",
     pic: MAM
   },
   {
     Title: "ポートフォリオサイト(改修中)",
     url: "https://takuwandtm.github.io/-react-portfolio-site/#",
-    cName: "nav-links",
+    cName: "works-links",
     pic: Portfolio
   },
   {
     Title: "Laravel_ECサイト",
     url: "https://github.com/takuwandtm/PHP_Laravel_Practice",
-    cName: "nav-links",
+    cName: "works-links",
     pic: EC
   },
 

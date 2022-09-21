@@ -1,9 +1,5 @@
 import CoverImage from '../images/cover-image.jpeg'
-import JavaScriptImage from '../images/javascript.png'
-import JQuery from '../images/jquery.png'
-import Java from '../images/java.png'
-import SpringBoot from '../images/spring_boot.png'
-import Oracle from '../images/Oracle.png'
+import { SkillsItem } from './SkillsItem';
 
 export const AboutMe = () => {
   const componentName = () => 'AboutMe';
@@ -18,25 +14,20 @@ export const AboutMe = () => {
           <p>駆け出しエンジニア藤島のポートフォリオサイトです。</p>
           <p>業務での経験、およびプライベートでの学習内容をまとめてみました</p>
           <p>数年後により充実し、"駆け出し"がとれるようにアウトプットを続けていく予定です。</p>
-
-          <div className="about-text"><p>業務経験</p></div>
-          <div className="explain-text">
-            <div class="flex_box">
-              <div class="flex_item">
-                <h1>フロントエンド</h1>
-                <h2><img src={JavaScriptImage} className="skill-picture" />JavaScript</h2>
-                <h1>フレームワーク</h1>
-                <h2><img src={JQuery} className="skill-picture" />jQuery</h2>
-              </div>
-              <div class="flex_item">
-                <h1>バックエンド</h1>
-                <h2><img src={Java} className="skill-picture" />Java</h2>
-                <h1>フレームワーク</h1>
-                <h2><img src={SpringBoot} className="skill-picture" />SpringBoot</h2>
-              </div>
-              <div class="flex_item">
-                <h1>RDBMS</h1>
-                <h2><img src={Oracle} className="skill-picture" />Oracle</h2>
+          <div class="container">
+            <div className="about-text"><p>業務経験</p></div>
+            <div className="explain-text">
+              <div class="flex_box">
+                {SkillsItem.map((item, index) => {
+                  return (
+                    <div className="flex_item">
+                      <h1>{item.genre}</h1>
+                      <img src={item.langPic} className="skill-picture"></img><p>{item.language}</p>
+                      <h1>{item.sub}</h1>
+                      <img src={item.framePic} className="skill-picture" /><p>{item.frame}</p>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>

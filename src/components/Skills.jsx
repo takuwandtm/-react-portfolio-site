@@ -11,14 +11,13 @@ export const Skills = () => {
     <div id="Works">
       <div className="heading">
         <h1>Works</h1>
-        <div className="flex_box">
+        <div className="flex_box_works">
           {WorksItem.map((item, index) => {
             return (
               <div className="flex_item_works">
                 <h2 className={item.cName}>
                   {item.Title}
                 </h2><a href={item.url}>
-
                   <img src={item.pic} className="works-picture" />
                 </a>
               </div>
@@ -27,7 +26,7 @@ export const Skills = () => {
         </div>
 
         <div id="skills">
-          <h2>githubリポジトリから算出した習熟度メーター</h2>
+          <h1>githubリポジトリ習熟度メーター</h1>
           <div className="container">
             <div className="skills-container">
               {

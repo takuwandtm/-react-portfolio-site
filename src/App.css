@@ -34,6 +34,12 @@ div.explain-text h3 {
   font-size: 30px;
 }
 
+div.skills h2 {
+  margin: 80;
+  font-size: 24px;
+  text-align: center;
+}
+
 div.heading h1 {
   margin: 80;
   font-size: 70px;
@@ -42,7 +48,7 @@ div.heading h1 {
 
 div.heading h2 {
   margin: 80;
-  font-size: 32px;
+  font-size: 24px;
 }
 
 h3 {
@@ -55,7 +61,7 @@ h3 {
   background-size: cover;
   background-attachment: fixed;
   position: relative;
-  height: 100vh;
+  height: 110vh;
   width: 100%;
 }
 
@@ -126,14 +132,22 @@ h3 {
 }
 
 .container {
-  width: 1170px;
+  width: auto;
   margin-right: auto;
   margin-left: auto;
   padding-left: 50px;
   padding-right: 50px;
-
 }
 
+@media win {
+  .container {
+    width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
 
 .display-table {
   width: 100%;
@@ -172,7 +186,7 @@ h3 {
   top: 120px;
   color: white;
   position: relative;
-  margin: 0;
+  padding: 50px;
   font-size: 30px;
   text-align: center;
 }
@@ -194,6 +208,7 @@ h3 {
 }
 
 .skills-container {
+  padding-top: 30px;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
@@ -285,6 +300,15 @@ site-header__wrapper {
   width: 100%;
 }
 
+.flex_box_works {
+  /* 背景色指定 */
+  padding: 10px;
+  /* 余白指定 */
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
 .flex_item {
   padding: 10px;
   color: #fff;
@@ -296,21 +320,19 @@ site-header__wrapper {
   width: 33%;
   height: auto;
   align-items: center;
-
 }
 
 .flex_item_works {
   padding: 10px;
   color: #fff;
   /* 文字色 */
-  margin: 10px;
+  margin: 5px;
   /* 外側の余白 */
   border-radius: 5px;
   /* 角丸指定 */
-  width: 33%;
+  width: 49%;
   align-items: center;
   box-sizing: border-box;
-
 }
 
 .flex_item:nth-child(1) {
@@ -329,10 +351,30 @@ site-header__wrapper {
 
 }
 
+.flex_item_works {
+  background-color: rgba(113, 136, 254, 0.8);
+  /* 背景色指定 */
+}
+
+
+
+
+/*レスポンシブ対応*/
+
+* {
+  float: none;
+  position: static;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 @media screen and (max-width: 1160px) {
   div.explain-text h1 {
     margin: 0;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   div.explain-text h2 {
@@ -349,7 +391,7 @@ site-header__wrapper {
     /* 外側の余白 */
     border-radius: 5px;
     /* 角丸指定 */
-    width: 33%;
+    width: 45%;
     align-items: center;
   }
 
@@ -361,41 +403,83 @@ site-header__wrapper {
     height: auto;
   }
 
-  .container {
-    width: 1170px;
-    padding-left: 0px;
-    padding-right: 0px;
-
+  div.heading h2 {
+    font-size: 20px;
   }
 }
 
-.flex_item_works:nth-child(1) {
-  background-color: rgba(113, 136, 254, 0.8);
-  /* 背景色指定 */
+@media screen and (max-width: 770px) {
+  div.flex_item p {
+    font-size: 14px;
+  }
+
+  div.explain-text h1 {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  div.explain-text {
+    font-size: 20px;
+    top: 120px;
+    padding: 0;
+    color: white;
+    position: relative;
+    text-align: center;
+  }
+
 }
 
-.flex_item_works:nth-child(2) {
-  background-color: rgba(113, 136, 254, 0.8);
-  /* 背景色指定 */
-}
+/*スマホ対応*/
 
-.flex_item_works:nth-child(3) {
-  background-color: rgba(113, 136, 254, 0.8);
-  /* 背景色指定 */
-}
+@media screen and (max-width: 480px) {
+  div.flex_item p {
+    font-size: 15px;
+  }
 
+  div.flex_item h1 {
+    font-size: 13px;
+  }
 
+  .about-text p {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+  }
 
-/*レスポンシブ対応*/
+  div.explain-text {
+    font-size: 15px;
+    top: 120px;
+    padding: 0;
+    color: white;
+    position: relative;
+    text-align: center;
+  }
 
-* {
-  float: none;
-  position: static;
-}
+  .main-cover-aboutMe {
+    height: 140vh;
+  }
 
-img {
-  max-width: 100%;
-  height: auto;
+  h3 {
+    margin: 100;
+    font-size: 15px;
+  }
+
+  div.heading h1 {
+    font-size: 30px;
+  }
+
+  .flex_item_works {
+    padding: 10px;
+    color: #fff;
+    /* 文字色 */
+    margin: 5px;
+    /* 外側の余白 */
+    border-radius: 0px;
+    /* 角丸指定 */
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+  }
 }
 
 /*アニメーション*/
@@ -484,4 +568,8 @@ li:hover .nav-links {
 
 li:hover .nav-links-mobile {
   color: black;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: rgba(0, 0, 0, 0);
 }

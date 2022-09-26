@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/-react-portfolio-site/static/css/main.ae3be5d3.css",
-    "main.js": "/-react-portfolio-site/static/js/main.35c87449.js",
+    "main.css": "/-react-portfolio-site/static/css/main.d45373f2.css",
+    "main.js": "/-react-portfolio-site/static/js/main.49eb48f5.js",
     "static/js/787.ce9a24bf.chunk.js": "/-react-portfolio-site/static/js/787.ce9a24bf.chunk.js",
     "static/media/cover-image.jpeg": "/-react-portfolio-site/static/media/cover-image.a9d63547972a55409371.jpeg",
+    "static/media/portfolio-site.png": "/-react-portfolio-site/static/media/portfolio-site.02b4cc9f3ffd77719234.png",
     "static/media/meditation-app-master.png": "/-react-portfolio-site/static/media/meditation-app-master.c67dd486548899f5ed55.png",
     "static/media/laravel_ec.png": "/-react-portfolio-site/static/media/laravel_ec.bb2efd5934ab8b8fba08.png",
-    "static/media/portfolio-site.png": "/-react-portfolio-site/static/media/portfolio-site.e1b77efb75ca154807a2.png",
+    "static/media/Paper.png": "/-react-portfolio-site/static/media/Paper.dfec784450956fb14750.png",
     "static/media/profile-image.jpg": "/-react-portfolio-site/static/media/profile-image.6f25365cf2e949f417aa.jpg",
     "index.html": "/-react-portfolio-site/index.html",
-    "main.ae3be5d3.css.map": "/-react-portfolio-site/static/css/main.ae3be5d3.css.map",
-    "main.35c87449.js.map": "/-react-portfolio-site/static/js/main.35c87449.js.map",
+    "main.d45373f2.css.map": "/-react-portfolio-site/static/css/main.d45373f2.css.map",
+    "main.49eb48f5.js.map": "/-react-portfolio-site/static/js/main.49eb48f5.js.map",
     "787.ce9a24bf.chunk.js.map": "/-react-portfolio-site/static/js/787.ce9a24bf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ae3be5d3.css",
-    "static/js/main.35c87449.js"
+    "static/css/main.d45373f2.css",
+    "static/js/main.49eb48f5.js"
   ]
 }

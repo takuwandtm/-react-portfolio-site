@@ -165,7 +165,6 @@ h3 {
 .title-text {
   color: white;
   position: relative;
-  line-height: 10px;
   animation: fadeIn 500ms linear both;
 }
 

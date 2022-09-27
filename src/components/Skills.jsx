@@ -26,7 +26,7 @@ export const Skills = () => {
         </div>
 
         <div id="skills">
-          <h1>githubリポジトリ習熟度メーター</h1>
+          <h2>githubリポジトリ習熟度メーター</h2>
           <div className="container">
             <div className="skills-container">
               {

@@ -1,23 +1,21 @@
-import { useEffect, useState } from "react";
-import React from 'react';
+import { useRef, useEffect, useCallback } from "react";
 
-const useScroll = () => {
+export const useScroll = () => {
 
-  const [scrollPosition, setScrollPosition] = useState(0);
+const ref = useRef();
 
-  useEffect(() => {
+const handleScrolling = useCallback(() => {
+  console.log("scrolling");
 
-    const PositionUp = () => {
-      setScrollPosition(window.pageYOffset);
-    }
+}, []);
 
-    window.addEventListener("scroll", PositionUp);
-    PositionUp();
+useEffect(() => {
 
-    return () => window.removeEventListener("scroll", PositionUp);
-  }, []);
+  const div = ref.current;
 
-  return scrollPosition;
-};
+  div.addEventListener('scroll', handleScrolling);
 
-export default useScroll;
+}, [handleScrolling]);
+
+
+}

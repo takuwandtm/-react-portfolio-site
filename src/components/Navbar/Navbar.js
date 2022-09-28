@@ -1,7 +1,7 @@
 import React from "react";
 import { MenuItems } from "./MenuItems";
 import { Nav } from "react-bootstrap";
-
+import Menu from "../Menu";
 
 export default function Navbar() {
   return (
@@ -19,9 +19,8 @@ export default function Navbar() {
           );
         })}
       </ul>
-      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <Menu width={250} />
     </Nav>
+
   );
 }

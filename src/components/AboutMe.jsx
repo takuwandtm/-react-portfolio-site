@@ -16,8 +16,8 @@ export const AboutMe = () => {
         <div className="about-text"><p>About Me</p></div>
         <div class="explain-text">
           <p>駆け出しエンジニア藤島のポートフォリオサイトです。</p>
-          <p>業務での経験、およびプライベートでの学習内容をまとめてみました</p>
-          <p>数年後により充実し、"駆け出し"がとれるようにアウトプットを続けていく予定です。</p>
+          <p>業務での経験、およびプライベートでの<br class="br-sp"></br>学習内容をまとめてみました</p>
+          <p>数年後により充実し、"駆け出し"がとれるように<br class="br-sp"></br>アウトプットを続けていく予定です。</p>
           <div class="container">
             <div className="about-text"><p>業務経験</p></div>
             <div className="explain-text">

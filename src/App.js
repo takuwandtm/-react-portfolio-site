@@ -1,5 +1,5 @@
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
+import { Header } from './components/Header';
 import { Profile } from './components/Profile';
 import { AboutMe } from './components/AboutMe';
 import { Skills } from './components/Skills';
@@ -8,7 +8,7 @@ import { Contact } from './components/Contact';
 function App() {
   return (
     <>
-      <Navbar />
+      <Header />
       <Profile />
       <AboutMe />
       <Skills />
@@ -19,4 +19,3 @@ function App() {
 
 export default App;
 
-　

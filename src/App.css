@@ -70,7 +70,7 @@ h3 {
   background-size: cover;
   background-attachment: fixed;
   position: relative;
-  height: 240vh;
+  height: 230vh;
   width: 100%;
 }
 
@@ -522,8 +522,6 @@ img {
     font-size: 12px;
   }
 
-
-
 }
 
 /*アニメーション*/
@@ -559,7 +557,7 @@ body {
 
 .NavbarItems h1 {
   color: white;
-  padding: 20px;
+  padding: 10px;
   font-size: 25px;
 }
 
@@ -574,13 +572,6 @@ body {
   list-style: none;
   margin: 0px;
   padding: 0;
-}
-
-
-@media screen and (max-width: 1200px) {
-  .nav-links {
-    display: none;
-  }
 }
 
 li {
@@ -616,4 +607,91 @@ li:hover .nav-links-mobile {
 
 .navbar-light .navbar-toggler {
   border-color: rgba(0, 0, 0, 0);
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-links {
+    display: none;
+  }
+
+  .NavbarItems h1 {
+    padding-left: 90px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .bm-burger-button {
+    display: none;
+  }
+}
+
+/*ハンバーガーメニュー編集*/
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 40px;
+  top: 25px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #fefefe;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #f9fafb;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: white;
+  padding: 1.5em 1.5em 3;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
 }

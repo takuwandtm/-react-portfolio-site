@@ -7,7 +7,7 @@ import { FaReact } from 'react-icons/fa'
 export const Header = () => {
   return (
     <Nav className="NavbarItems">
-      <h1 className="Navbar-logo"><FaReact color="white" size="4rem" /></h1>
+      <h1 className="Navbar-logo" ><FaReact color="white" size="4rem" /></h1>
       <div className="menu-icon"></div>
       <ul>
         {MenuItems.map((item, index) => {

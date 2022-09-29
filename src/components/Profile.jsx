@@ -4,7 +4,6 @@ import { FaTwitter, FaGithub } from 'react-icons/fa'
 
 export const Profile = () => {
   const componentName = () => 'Profile';
-
   return (
 
     <header className="main-cover" style={{ backgroundImage: `url(${CoverImage})` }} >

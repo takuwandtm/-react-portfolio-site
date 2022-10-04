@@ -1,46 +1,49 @@
 import CoverImage from '../images/cover-image.jpeg'
 import { SkillsItem } from './SkillsItem';
-import { useSpring, animated } from 'react-spring'
-// import { useScrollFadeIn } from '../customHooks/useScrollFadeIn';
+import { Up, Left, Down } from './organisms/Animation';
 
 export const AboutMe = () => {
   const componentName = () => 'AboutMe';
-  const props = useSpring({
-    to: [{ opacity: 1, color: '#ffaaee' }, { opacity: 1, color: 'rgb(14,26,19)' }],
-    from: { opacity: 0, color: 'red' }
-  })
 
   return (
-    <header className="main-cover-aboutMe" style={{ backgroundImage: `url(${CoverImage})` }}>
-      <div id="about">
-        {/* overlayはカバー画像の上に透過して表示される背景要素です */}
+    <header className="main-cover-aboutMe" style={{ backgroundImage: `url(${CoverImage})` }} id='about'>
+      <div className="overlay"></div>
+      {/* overlayはカバー画像の上に透過して表示される背景要素です */}
 
-        <div className="overlay"></div>
 
+      <Down>
         <div className="about-text"><p>About Me</p></div>
-        <animated.div style={props}>
-          <div class="explain-text">
-            <p>駆け出しエンジニア藤島のポートフォリオサイトです。</p>
-            <p>業務での経験、およびプライベートでの<br class="br-sp"></br>学習内容をまとめてみました</p>
-            <p>数年後により充実し、"駆け出し"がとれるように<br class="br-sp"></br>アウトプットを続けていく予定です。</p>
-            <div class="container">
-              <div className="about-text"><p>業務経験</p></div>
-              <div className="explain-text">
-                <div class="flex_box">
-                  {SkillsItem.map((item, index) => {
-                    return (
-                      <div className="flex_item">
-                        <h1>{item.genre}</h1>
-                        <img src={item.langPic} className="skill-picture"></img><p>{item.language}</p>
-                        <h1>{item.sub}</h1>
-                        <img src={item.framePic} className="skill-picture" /><p>{item.frame}</p>
-                      </div>
-                    );
-                  })}
-                </div>
+      </Down>
+
+      <div class="explain-text"><Left>
+        <p>駆け出しエンジニア藤島のポートフォリオサイトです。</p>
+        <p>業務での経験、およびプライベートでの<br class="br-sp"></br>学習内容をまとめてみました</p>
+        <p>数年後により充実し、"駆け出し"がとれるように<br class="br-sp"></br>アウトプットを続けていく予定です。</p>
+      </Left>
+        <div class="container">
+          <Up>
+            <div className="about-text"><p>業務経験</p></div>
+          </Up>
+          <div className="explain-text">
+            <Left>
+              <div class="flex_box">
+                {SkillsItem.map((item) => {
+                  return (
+
+                    <div className="flex_item">
+                      <h1>{item.genre}</h1>
+                      <img src={item.langPic} className="skill-picture"></img><p>{item.language}</p>
+                      <h1>{item.sub}</h1>
+                      <img src={item.framePic} className="skill-picture" /><p>{item.frame}</p>
+                    </div>
+
+                  );
+                })}
+
               </div>
-            </div>
-          </div></animated.div>
+            </Left>
+          </div>
+        </div>
       </div>
     </header >
   );
